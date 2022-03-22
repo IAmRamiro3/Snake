@@ -6,6 +6,4 @@ public class Main {
         new Frame();
     }
 }
-
-//Repositorio de prueba en Github, a ver si se actualiza un poco esto
     
