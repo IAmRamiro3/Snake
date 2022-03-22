@@ -25,7 +25,6 @@ public class Panel extends JPanel implements ActionListener {
     boolean running = false;
     Timer timer;
     Random random;
-    ImageIcon img = new ImageIcon("/imagen/gatito.jpg");
 
     Panel() {
         random = new Random();
@@ -62,7 +61,6 @@ public class Panel extends JPanel implements ActionListener {
                 if (i == 0) {
                     g.setColor(Color.green);
                     g.fillRect(x[i], y[i], UNIT_SIZE, UNIT_SIZE);
-                    g.drawImage(img.getImage(), img.getIconHeight(), img.getIconWidth(), null);
                 } else {
                     //g.setColor(new Color(45, 180, 0));
                     g.setColor(new Color(random.nextInt(255), random.nextInt(255), random.nextInt(255)));
