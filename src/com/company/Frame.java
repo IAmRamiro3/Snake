@@ -1,13 +1,17 @@
 package com.company;
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 
 public class Frame extends JFrame{
 
     Menu menu = new Menu();
 
-    Frame() {
+    Frame(){
         this.add(menu);
         this.setTitle("Snake");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -15,15 +19,5 @@ public class Frame extends JFrame{
         this.pack();
         this.setVisible(true);
         this.setLocationRelativeTo(null);
-    }
-}
-
-class imagen extends JPanel{
-    public imagen(){
-        this.setSize(200,200);
-    }
-
-    public void paint(Graphics g){
-        
     }
 }

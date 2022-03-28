@@ -8,8 +8,8 @@ import javax.swing.plaf.DimensionUIResource;
 
 public class Menu extends JPanel{
 
-    static final int Ancho = 300;
-    static final int Alto = 300;
+    static final int Ancho = 400;
+    static final int Alto = 400;
     JButton boton = new JButton("Iniciar");
 
     Menu(){
@@ -17,7 +17,7 @@ public class Menu extends JPanel{
         this.setBackground(Color.DARK_GRAY);
         this.setFocusable(true);
         this.add(boton);
-        boton.setBounds(50,50,50,50);
+        boton.setBounds(50,350,10,10);
         boton.setVisible(true);
         boton.addActionListener(new ActionListener() {
             @Override
