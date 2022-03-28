@@ -1,14 +1,18 @@
 package com.company;
 
-import java.util.ArrayList;
-
+import javax.imageio.ImageIO;
 import javax.swing.*;
+import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 
-public class Frame extends JFrame {
+public class Frame extends JFrame{
 
-    Frame() {
+    Menu menu = new Menu();
 
-        this.add(new Panel());
+    Frame(){
+        this.add(menu);
         this.setTitle("Snake");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setResizable(false);
