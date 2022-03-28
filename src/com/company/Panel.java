@@ -25,7 +25,6 @@ public class Panel extends JPanel implements ActionListener {
     boolean running = false;
     Timer timer;
     Random random;
-    JButton boton = new JButton("Hola");
 
     Panel() {
         random = new Random();
@@ -34,16 +33,6 @@ public class Panel extends JPanel implements ActionListener {
         this.setFocusable(true);
         this.addKeyListener(new MyKeyAdapter());
         startGame();
-        this.add(boton);
-        boton.setBounds(300,500,50,50);
-        boton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if (e.getSource() == boton){
-                    new Panel();
-                }
-            }
-        });
     }
 
     public void startGame() {
