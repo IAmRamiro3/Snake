@@ -10,7 +10,7 @@ public class Menu extends JPanel{
 
     static final int Ancho = 400;
     static final int Alto = 400;
-    JButton boton = new JButton("Iniciar");
+    JButton boton = new JButton("Vamo' a jugá");
 
     Menu(){
         this.setPreferredSize(new DimensionUIResource(Ancho, Alto));
